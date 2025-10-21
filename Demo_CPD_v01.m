@@ -4,20 +4,19 @@ clear; clc; close all;
 %%    Load Function    %%
 
 addpath(genpath('Function'));
-addpath(genpath('Code_Cho'));
 
 
 %%    Image Index    %%
 
 %%%%  Image Name  %%%%
 % ImageName = 'Blurry3_11';
-ImageName = 'picassoBlurImage';
+% ImageName = 'picassoBlurImage';
 % ImageName = 'las_vegas_saturated';
 % ImageName = 'flower_blurred';
 % ImageName = 'IMG_4355_small';
 % ImageName = 'scene002-3';
 % ImageName = 'Blurry2_12';
-% ImageName = 'real_blur_img3';
+ImageName = 'real_blur_img3';
 
 %%%%  Read the Image  %%%%
 Image_b = strcat( 'Test Image', '\', ImageName, '.png' );
