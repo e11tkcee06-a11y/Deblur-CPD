@@ -10,9 +10,12 @@ C. Recommended Matlab version: 2019a or later
 
 D. Instructions for Use
     Step 1: Select a test image in the "Image Index" section.
+    
     Step 2: In the "Parameter" section,
             a. Determine the number of candidates (default is 5).
             b. Specify which candidate to use as the estimated kernel (default is 1).
+
+    Step 3: Run the program.
 
 E. Folder Description:
     1. Test Image: Places the test image.
