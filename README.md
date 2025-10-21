@@ -19,9 +19,13 @@ D. Instructions for Use
     Step 3: Run the program.
 
 E. Folder Description:
+
     1. Test Image: Places the test image.
+    
     2. Parameter: Places the parameter file (.xlsx) used for the test image.
+    
     3. Function: Places the sub-functions used by the algorithm.
 
 p.s. Because the description and explanation of the sub-functions are not yet complete, we have initially released the .p file for readers' reference. 
+     
      We will complete the description and explanation of the sub-functions as soon as possible and gradually release the .m file for readers' reference.
