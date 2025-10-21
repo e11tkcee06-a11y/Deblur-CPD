@@ -9,6 +9,7 @@ B. Executable file: Demo_CPD_v01.m
 C. Recommended Matlab version: 2019a or later
 
 D. Instructions for Use
+
     Step 1: Select a test image in the "Image Index" section.
     
     Step 2: In the "Parameter" section,
