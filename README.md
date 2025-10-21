@@ -27,5 +27,4 @@ E. Folder Description:
     3. Function: Places the sub-functions used by the algorithm.
 
 p.s. Because the description and explanation of the sub-functions are not yet complete, we have initially released the .p file for readers' reference. 
-     
      We will complete the description and explanation of the sub-functions as soon as possible and gradually release the .m file for readers' reference.
