@@ -1,6 +1,8 @@
 # Deblur-CPD
 MATLAB implementation of CPD based blind image deblurring
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 A. The program is currently executable and is for academic use only.
 
 B. Executable file: Demo_CPD_v01.m
