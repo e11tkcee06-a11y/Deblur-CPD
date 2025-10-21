@@ -11,8 +11,8 @@ addpath(genpath('Code_Cho'));
 
 %%%%  Image Name  %%%%
 % ImageName = 'Blurry3_11';
-% ImageName = 'picassoBlurImage';
-ImageName = 'las_vegas_saturated';
+ImageName = 'picassoBlurImage';
+% ImageName = 'las_vegas_saturated';
 % ImageName = 'flower_blurred';
 % ImageName = 'IMG_4355_small';
 % ImageName = 'scene002-3';
@@ -91,7 +91,7 @@ fprintf( '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 %%%%  Non-blind Deconvolution  %%%%
 tic;
-rg_RGB = f_Reconstruct_Image( b_RGB, ug, opts );
+rg_RGB = f_00_Reconstruct_Image( b_RGB, ug, opts );
 RunTime_1 = toc;
 
 fprintf( '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n' )
