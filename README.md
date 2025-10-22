@@ -1,4 +1,4 @@
-# Deblur-CPD
+# CPD-Deblur
 MATLAB implementation of CPD based blind image deblurring
 
 
