@@ -4,6 +4,7 @@
 
 # CPD-Deblur #
 ** Fast Blind Image Deblurring Based on Cross Partial Derivative **
+
 MATLAB implementation of CPD based blind image deblurring
 
 This repository provides the implementation and demo code for a blind image deblurring method based on cross partial derivative (CPD). The method estimates blur kernels from derivative responses and restores images using non-blind deconvolution.
