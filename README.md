@@ -37,7 +37,7 @@ Run the following file to reproduce the main results:
 ---
 
 ## 🗂️ Folder Structure
-CPD-Deblur
+CPD-Deblur/
 
   Function --- Sub-functions for CPD and kernel estimation
 
