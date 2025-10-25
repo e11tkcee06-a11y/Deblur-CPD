@@ -38,19 +38,12 @@ Run the following file to reproduce the main results:
 
 ## 🗂️ Folder Structure
 CPD-Deblur
-│
-├─ Function/              # Sub-functions for CPD and kernel estimation
-│
-├─ Parameter/             # Parameter settings (Excel format)
-│
-├─ Test Image/            # Demo test images
-│
-├─ Demo_CPD_v01.m         # Main executable script
-│
-├─ f_00_Estimate_Kernel.m      # Sub-function: Estimate kernel
-│
-└─ f_00_Reconstruct_Image.m    # Sub-function: Non-blind deconvolution
-
+  Function/                 # Sub-functions for CPD and kernel estimation
+  Parameter/                # Parameter settings (Excel format)
+  Test Image/               # Demo test images
+  Demo_CPD_v01.m            # Main executable script
+  f_00_Estimate_Kernel.m    # Main function: Estimate kernel
+  f_00_Reconstruct_Image.m  # Main function: Non-blind deconvolution
 
 ---
 
