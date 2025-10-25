@@ -25,12 +25,12 @@ This repository provides the implementation and demo code for a blind image debl
 
 ### MATLAB Script
 Run the following file to reproduce the main results:
-Demo_CPD_v01.m
+**Demo_CPD_v01.m**
 
 ### Steps
-1. Choose the test image in the “Image Index” section  
-2. Set number of kernel candidates (default: 5)  
-3. Select one candidate for reconstruction (default: 1)  
+1. Choose the test image in the “Image Index” section.
+2. Set number of kernel candidates in the “Parameter” section. (default: 5)  
+3. Select one candidate for reconstruction in the “Parameter” section. (default: 1)  
 4. Run and compare results  
 
 ---
