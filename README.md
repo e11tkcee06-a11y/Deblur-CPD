@@ -60,10 +60,6 @@ CPD-Deblur/
 
 ---
 
-## 📊 Example Result
-
----
-
 ## ⚠️ Academic Use Only
 This repository is shared for **peer-review** purposes and non-commercial academic use.  
 Please do not redistribute without permission.
