@@ -1,3 +1,6 @@
+![MIT License](https://img.shields.io/badge/license-MIT-green)
+![MATLAB](https://img.shields.io/badge/language-MATLAB-blue)
+
 # Fast Blind Image Deblurring Based on Cross Partial Derivative #
 MATLAB implementation of CPD based blind image deblurring
 
