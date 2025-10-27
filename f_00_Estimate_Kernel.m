@@ -1,4 +1,32 @@
-function [ ug, u1, RunTime, opts ] = f_00_Estimate_Kernel( b, opts, Num_Desired_Candidates, Index_ug )
+function [ ug, u1, RunTime, opts ] = f_00_Estimate_Kernel( b, opts, Num_Candidates, Index_ug )
+
+
+    %%    Main Function Description    %%
+
+    %%%%  Summary  %%%%
+    % This main function is used to estimate the kernel from the CPD image
+    % of the input blurred image. There are six steps:
+    
+    % 01__Find the matched CPD peaks of the input blurred image.
+    % 02__Produce masks based on the matched CPD peaks.
+    % 03__Perform connected component analysis on the masks to obtain initial positive and negative candidates.
+    % 04__Center, normalize and merge initial candidates to obtain refined candidates
+    % 05__Resize input blurred image and candidates.
+    % 06__Calculate spectrum correlation between resized input blurredn image and the candidates.
+    
+    % After the above six steps, we can get the estimated kernel.
+    
+    %%%%  Input  %%%%
+    % b             : Input Blurred Image
+    % opts          : Global Parameters
+    % Num_Candidates: Number of Kernel Candidates
+    % Index_ug      : Candidate Index
+    
+    %%%%  Output  %%%%
+    % ug      : Output Estimated Kernel
+    % u1      : All Candidates
+    % RunTime : Run Time
+    % opts    : Global Parameters
 
 
     %%    01__Matched CPD Peaks of Blurred Image    %%
@@ -47,9 +75,6 @@ function [ ug, u1, RunTime, opts ] = f_00_Estimate_Kernel( b, opts, Num_Desired_
         Mask_Decomposition_N{ h, 1 } = f_03_Connected_Component_Analysis( Mask_N(:,:,h), opts );
     end
     uN = cat( 3, Mask_Decomposition_N{:,1} );
-
-    Num_uP = size( uP, 3 );
-    Num_uN = size( uN, 3 );
 
     RunTime(1,3) = toc;
     fprintf( '%.4f s..........', RunTime(1,3) )
@@ -117,7 +142,7 @@ function [ ug, u1, RunTime, opts ] = f_00_Estimate_Kernel( b, opts, Num_Desired_
 
     [ sB_Log, sU0_Log, CORR ] = f_06_Spectrum_Correlation( sb, su0, opts );
 
-    Num_Desired = min( size(su0,3), Num_Desired_Candidates );
+    Num_Desired = min( size(su0,3), Num_Candidates );
 
     u1      = u0( :,:,CORR( 1:Num_Desired, 1) );
     sU1_Log = sU0_Log( :,:,CORR( 1:Num_Desired, 1) );
